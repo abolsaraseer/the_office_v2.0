@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Office v2.0 · Floor Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+:root{--bg:#e6e2db;--panel:#fbfaf8;--fg:#27231e;--muted:#6e675d;--accent:#8b5a2b;--line:rgba(39,35,30,.14);
+  --display:"Space Grotesk",ui-sans-serif,system-ui,sans-serif;--body:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--panel:#1f2125;--fg:#ece9e4;--muted:#a39c91;--accent:#d39a5e;--line:rgba(255,255,255,.12);color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);
+  padding:calc(env(safe-area-inset-top,0px) + 20px) max(16px,env(safe-area-inset-right,0px)) 32px max(16px,env(safe-area-inset-left,0px))}
+header{max-width:1400px;margin:0 auto 16px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between}
+h1{font-family:var(--display);font-weight:600;font-size:26px;margin:0;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+a.btn{font:500 13px var(--body);color:var(--fg);text-decoration:none;border:1px solid var(--line);background:var(--panel);
+  border-radius:999px;padding:8px 14px}
+a.btn:hover{border-color:var(--accent)}
+a.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+a.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sheet{max-width:1400px;margin:0 auto;background:#fff;border-radius:6px;box-shadow:0 1px 2px rgba(0,0,0,.08),0 12px 40px rgba(0,0,0,.12);overflow-x:auto}
+.sheet img{display:block;width:100%;min-width:900px;height:auto}
+.foot{max-width:1400px;margin:12px auto 0;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>The Office v2.0</h1>
+    <div class="sub">Ground floor plan · 1:50 at A3 · 61.5 m²</div>
+  </div>
+  <nav aria-label="Downloads">
+    <a class="btn primary" href="./">Open 3D model</a>
+    <a class="btn" href="plan.pdf" download>Download PDF</a>
+    <a class="btn" href="plan.svg" download>SVG</a>
+    <a class="btn" href="plan.png" download>PNG</a>
+    <a class="btn" href="the_office.glb" download>3D file (.glb)</a>
+  </nav>
+</header>
+<main class="sheet">
+  <img src="plan.svg" alt="Floor plan of The Office v2.0: hall 4.19 by 6.45 m, entry 2.60 by 3.39 m, room 1 3.71 by 4.43 m, room 2 3.71 by 2.49 m">
+</main>
+<p class="foot">Dimensions in metres to wall centre lines. Window sizes are estimated from site photos; verify on site.</p>
+</body>
+</html>
